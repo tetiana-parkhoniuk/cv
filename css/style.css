@@ -35,8 +35,8 @@ body {
 .about-me-container {
   padding-left: 90px;
   padding-right: 90px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .contacts-container {
@@ -124,6 +124,38 @@ body {
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
+}
+
+.about-me-btns-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 44px;
+  border-radius: 16px;
+  margin-right: 20px;
+  padding: 0;
+  border: 2px solid #283593;
+  background-color: #283593;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  filter: drop-shadow(1px 3px 5px rgba(82, 85, 95, 0.15));
+  transition: box-shadow 600ms ease-in-out, background-color 600ms ease-in-out;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  background-color: #5f5fc4;
+  color: #283593;
+  box-shadow: 0 0 20px 20px #fff inset;
 }
 
 .description {
@@ -261,30 +293,6 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   color: #595959;
-}
-
-.btn-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 44px;
-  border-radius: 16px;
-  padding: 0;
-  border: 2px solid #283593;
-  background-color: #283593;
-  font-weight: 500;
-  text-decoration: none;
-  color: #fff;
-  filter: drop-shadow(1px 3px 5px rgba(82, 85, 95, 0.15));
-  transition: box-shadow 600ms ease-in-out, background-color 600ms ease-in-out;
-}
-
-.btn-link:hover,
-.btn-link:focus {
-  background-color: #5f5fc4;
-  color: #283593;
-  box-shadow: 0 0 20px 20px #fff inset;
 }
 
 .more-info-icon {
