@@ -1,7 +1,10 @@
+// DownloadLink Functionality
 const downloadLink = document.querySelector('.downloadLink');
 
 const thankYouParagraph = document.createElement('p');
+
 const paragraphContent = document.createTextNode('Thank you for downloading!');
+
 thankYouParagraph.appendChild(paragraphContent);
 thankYouParagraph.style.cssText =
   'margin-top: 10px; margin-right: 10px; color:#283593;';
@@ -12,9 +15,9 @@ function onDownloadLinkClick() {
 
 downloadLink.addEventListener('click', onDownloadLinkClick);
 
-const moreBtn = document.querySelector('#moreBtn');
+// MoreBtn Functionality
 
-moreBtn.addEventListener('click', onMoreBtnClick);
+const moreBtn = document.querySelector('#moreBtn');
 
 function onMoreBtnClick() {
   const dots = document.getElementById('dots');
@@ -30,3 +33,5 @@ function onMoreBtnClick() {
     moreDescription.style.display = 'inline';
   }
 }
+
+moreBtn.addEventListener('click', onMoreBtnClick);
