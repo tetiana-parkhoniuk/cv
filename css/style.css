@@ -87,6 +87,7 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--secondary-accent-color);
+  animation: tada 1s;
 }
 
 .skills-title {
@@ -131,12 +132,15 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
+  animation: backInRight 2s;
 }
 
 .name {
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
+  animation: heartBeat 2s;
+  animation-delay: 2s;
 }
 
 .about-me-btns-container {
@@ -169,6 +173,7 @@ body {
   background-color: var(--secondary-accent-color);
   color: var(--primary-accent-color);
   box-shadow: 0 0 20px 20px #fff inset;
+  animation: shakeX 1s;
 }
 
 .description {
