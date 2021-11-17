@@ -43,6 +43,8 @@ body {
 
 .my-photo {
   width: 370px;
+  animation: zoomOut 2s;
+  animation-delay: 3s;
 }
 
 .about-me-container {
