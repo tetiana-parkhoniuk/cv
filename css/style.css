@@ -165,6 +165,32 @@ body {
   margin-top: 20px;
 }
 
+.more-description {
+  display: none;
+}
+
+.more-btn {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0;
+  border: 2px solid #626974;
+  background-color: #626974;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  filter: drop-shadow(1px 3px 5px rgba(82, 85, 95, 0.15));
+  transition: box-shadow 600ms ease-in-out, background-color 600ms ease-in-out;
+}
+
+.more-btn:hover,
+.more-btn:focus {
+  background-color: #5f5fc4;
+  color: #626974;
+  box-shadow: 0 0 20px 20px #fff inset;
+}
+
 .about-me-main-info {
   margin-bottom: 35px;
 }

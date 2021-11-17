@@ -6,8 +6,27 @@ thankYouParagraph.appendChild(paragraphContent);
 thankYouParagraph.style.cssText =
   'margin-top: 10px; margin-right: 10px; color:#283593;';
 
-function onClick() {
+function onDownloadLinkClick() {
   downloadLink.insertAdjacentElement('afterend', thankYouParagraph);
 }
 
-downloadLink.addEventListener('click', onClick);
+downloadLink.addEventListener('click', onDownloadLinkClick);
+
+const moreBtn = document.querySelector('#moreBtn');
+
+moreBtn.addEventListener('click', onMoreBtnClick);
+
+function onMoreBtnClick() {
+  const dots = document.getElementById('dots');
+  const moreDescription = document.getElementById('more');
+
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    moreBtn.innerHTML = 'Read more';
+    moreDescription.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    moreBtn.innerHTML = 'Read less';
+    moreDescription.style.display = 'inline';
+  }
+}
